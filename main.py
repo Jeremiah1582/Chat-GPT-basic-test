@@ -7,4 +7,4 @@ prompt = "how many days are in a year"
 
 response = openai.Completion.create(engine="text-davinci-001", prompt=prompt, max_tokens=6)
 
-print(response)
+print(response.choices[0].text)
